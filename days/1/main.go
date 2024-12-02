@@ -25,10 +25,6 @@ func main() {
 
 	lines := strings.Split(string(buffer), "\n")
 	for _, line := range lines {
-		if line == "" {
-			continue
-		}
-
 		var leftValue, rightValue int
 		fmt.Sscanf(line, "%d   %d", &leftValue, &rightValue)
 
